@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Doxx Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 OSINT Search Engine</h1>
+        
+        <div class="search-box">
+            <input type="text" id="targetInput" placeholder="Nom, email, pseudo, téléphone...">
+            <button onclick="startSearch()">Rechercher</button>
+        </div>
+        
+        <div id="results">
+            <div id="loading" style="display: none;">Recherche en cours...</div>
+            <div id="output"></div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/search.js') }}"></script>
+</body>
+</html>
