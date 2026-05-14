@@ -1,0 +1,14 @@
+doxsite/
+├── app.py
+├── requirements.txt
+├── templates/
+│   └── index.html
+├── static/
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── search.js
+└── modules/
+    ├── scraper.py
+    ├── breach.py
+    └── social.py
